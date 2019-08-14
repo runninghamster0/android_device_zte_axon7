@@ -495,6 +495,9 @@
     <!-- Disable Button backlight settings -->
     <integer name="config_buttonBrightnessSettingDefault">0</integer>
 
+    <!-- Hardware buttons customization -->
+    <integer name="config_deviceHardwareKeys">83</integer>
+
     <!-- Whether the always on display mode is available. -->
     <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
 
