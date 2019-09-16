@@ -237,11 +237,10 @@ PRODUCT_PACKAGES += \
 
 # IMS
 PRODUCT_PACKAGES += \
-    ims-ext-common \
-    telephony-ext
+    ims-ext-common_system
 
 PRODUCT_BOOT_JARS += \
-    telephony-ext
+    ims-ext-common_system
 
 # IPA Manager
 PRODUCT_PACKAGES += \
