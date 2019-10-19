@@ -34,6 +34,14 @@ if [ ! -f "$HELPER" ]; then
 fi
 . "$HELPER"
 
+function blob_fixup() {
+    case "${1}" in
+    vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so)
+        patchelf --replace-needed "libbase.so" "libbase-v28.so" "${2}"
+        ;;
+    esac
+}
+
 if [ $# -eq 0 ]; then
   SRC=adb
 else
