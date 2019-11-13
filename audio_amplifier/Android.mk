@@ -5,7 +5,7 @@ include $(CLEAR_VARS)
 LOCAL_C_FLAGS += -DPLATFORM_MSM8996
 
 LOCAL_C_INCLUDES += \
-     $(call project-path-for,qcom-audio)/hal/msm8974/ \
+     hardware/qcom/audio-caf/msm8996/hal/msm8974/ \
      $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include \
      hardware/libhardware/include
 
