@@ -373,6 +373,8 @@ on property:vold.decrypt=trigger_restart_framework
     start audio-hal-2-0
     start config_bt_addr
     start config_bluetooth
+    stop vendor.camera-provider-2-4
+    start vendor.camera-provider-2-4
 
 on property:persist.env.fastdorm.enabled=true
     setprop persist.radio.data_no_toggle 1
@@ -522,7 +524,7 @@ service time_daemon /vendor/bin/time_daemon
 
 # Start camera server as daemon
 service qcamerasvr /vendor/bin/mm-qcamera-daemon
-    class late_start
+    class main
     user camera
     group camera system inet input graphics
     writepid /dev/cpuset/system-background/tasks /dev/cpuset/top-app/tasks
@@ -622,3 +624,10 @@ service gx_fpd /vendor/bin/gx_fpd
     user system
     group system
     writepid /dev/cpuset/system-background/tasks
+
+on property:init.svc.media=restarting
+    restart qcamerasvr
+
+on property:init.svc.servicemanager=restarting
+    restart qcamerasvr
+
