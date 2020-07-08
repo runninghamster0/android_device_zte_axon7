@@ -97,7 +97,7 @@ on post-fs-data
     mkdir /data/vendor/media 0770 mediacodec media
 
     # Create directories for fingerprint
-    mkdir /data/system/fingerprint 0700 system system
+    mkdir /data/vendor/fingerprint 0700 system system
 
     # Create directory for tftp
     mkdir /data/vendor/tombstones 0771 system system
