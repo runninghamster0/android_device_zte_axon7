@@ -98,6 +98,6 @@ extract "${MY_DIR}"/proprietary-files.txt "${SRC}" "${SECTION}"
 sed -i "s|/data/system/fingerprint|/data/vendor/fingerprint|g" "${DEVICE_BLOB_ROOT}"/vendor/lib64/hw/fingerprint.msm8996.so
 sed -i "s|/data/system/fingerprint|/data/vendor/fingerprint|g" "${DEVICE_BLOB_ROOT}"/vendor/lib64/gxfingerprint.default.so
 sed -i "s|/data/system/fingerprint|/data/vendor/fingerprint|g" "${DEVICE_BLOB_ROOT}"/vendor/lib64/libfp_client.so
-sed -i "s|/data/system/fingerpint|/data/vendor/fingerprint|g" "${DEVICE_BLOB_ROOT}"/vendor/lib64/libfpservice.so
+sed -i "s|/data/system/fingerprint|/data/vendor/fingerprint|g" "${DEVICE_BLOB_ROOT}"/vendor/lib64/libfpservice.so
 
 "${MY_DIR}"/setup-makefiles.sh
