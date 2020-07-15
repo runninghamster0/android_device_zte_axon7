@@ -81,6 +81,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.frp.pst=/dev/block/platform/soc/624000.ufshc/by-name/frp
 
+# Fingerprint
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.fingerprint=goodix
+
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.egl.hw=1 \

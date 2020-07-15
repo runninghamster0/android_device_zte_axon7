@@ -481,6 +481,8 @@ vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc|5a01d337c1d375ee24a
 vendor/lib/libwvhidl.so|37333d17980282275805807bc648bf8516fd4143
 
 # Fingerprint sensor (Goodix)
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.axon7
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.axon7.rc
 vendor/bin/gx_fpd
 vendor/lib64/hw/fingerprint.goodix.so:vendor/lib64/hw/fingerprint.msm8996.so
 vendor/lib64/hw/gxfingerprint.default.so
@@ -756,7 +758,6 @@ vendor/lib/libdsutils.so|e83597f9091df4d40c53196e12d6bd724f21ce8f
 vendor/lib/libidl.so|9d2d4dda8b4e9b1e8fa2a2dd69923ea3c9ff3549
 vendor/lib/libqdi.so|ece1b46b7c761e864f4eb42063feedf3d89e5fa9
 vendor/lib/libqdp.so|fe72300f1bc8efd3fccff769ddaf7d18dac51db3
-vendor/lib/libqmi_cci.so|2b655824f8dd241b15e117c3a562e098467daee2
 vendor/lib/libqmi_client_helper.so|3b0cecb72386b2e915d75a421dd805bf76b3960c
 vendor/lib/libqmi_client_qmux.so|540543c09e5ec48ac08694d78be6931b8728e229
 vendor/lib/libqmi_common_so.so|a15a552631d1f4f74b888fddddb466767667d0ac
@@ -771,7 +772,6 @@ vendor/lib64/libdsutils.so|db0b4920f5b44ec1888773831070badc8dc813e2
 vendor/lib64/libidl.so|0e92d13b3ee1eec39adeba8869fab469913044f3
 vendor/lib64/libqdi.so|ca2b00bb2b078c856b150a3c7ae133658a2f336c
 vendor/lib64/libqdp.so|8a88e859e06160d93d9507d3c97e4c9225d66937
-vendor/lib64/libqmi_cci.so|354bc4fd60d3cb2696fe8e939b431637463e6dd7
 vendor/lib64/libqmi_client_helper.so|624a5ab5dc9480248593cc9037baaed913b518d9
 vendor/lib64/libqmi_client_qmux.so|2bb7193389348d32aefea76b67f2e5229fd0ab27
 vendor/lib64/libqmi_common_so.so|75135bf5b3510eb8fac0112a5823d4c9663629ac
@@ -780,6 +780,10 @@ vendor/lib64/libqmi_encdec.so|d1529781c74bbffbe1167f86a033c7e38d474a5e
 vendor/lib64/libqmi.so|8ef0d8398863b95e5b1e1a93ae2c70dddd314054
 vendor/lib64/libqmiservices.so|d0e960626c0819113bfc023dd704523867091c77
 vendor/lib64/libsmemlog.so|512653d3d9563fda55acb84d76006c298eb78ba2
+
+# QMI - from LA.UM.8.6.r1-01900-89xx.0
+vendor/lib/libqmi_cci.so|5a48201e565516a2fdff11c228162d2eda733fe5
+vendor/lib64/libqmi_cci.so|d5c4f4ad1a484fd00066b8f054877fc7dae77f8b
 
 # RIL - from tissot - OPR1.170623.026
 product/framework/qti-telephony-common.jar|b1953a3599255f08f1785c677d22810f65e0167b
