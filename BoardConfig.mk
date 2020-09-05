@@ -29,9 +29,6 @@ TARGET_SPECIFIC_HEADER_PATH := $(PLATFORM_PATH)/include
 TARGET_BOARD_INFO_FILE ?= device/zte/axon7/board-info.txt
 TARGET_OTA_ASSERT_DEVICE := ailsa_ii,axon7
 
-# Use Snapdragon LLVM, if available
-TARGET_USE_SDCLANG := true
-
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := ailsa_ii
 TARGET_NO_BOOTLOADER := true
