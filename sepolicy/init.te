@@ -1,0 +1,3 @@
+allow init init:socket { read  write };
+allow init self:socket { read write };
+allow init vndbinder_device:chr_file ioctl;

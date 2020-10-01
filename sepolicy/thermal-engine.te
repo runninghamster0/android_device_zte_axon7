@@ -1,1 +1,2 @@
-allow thermal-engine sysfs:file { read };
+allow thermal-engine sysfs:file read;
+allow thermal-engine sysfs:file open;
