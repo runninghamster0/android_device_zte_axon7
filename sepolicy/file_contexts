@@ -5,7 +5,6 @@
 /data/camera(/.*)?                          u:object_r:camera_socket:s0
 /data/connectivity(/.*)?                    u:object_r:cnd_core_data_file:s0
 /data/system/fingerprint(/.*)?              u:object_r:gx_fpd_data_file:s0
-/data/vendor/misc/audio(/.*)?               u:object_r:audio_vendor_data_file:s0
 
 # Devices
 /dev/goodix_fp                              u:object_r:gx_fpd_device:s0
