@@ -430,8 +430,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wcnss/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
 
 # WiFi Display
-PRODUCT_PACKAGES += \
-    libnl
+#PRODUCT_PACKAGES += \
+#    libnl
 
-PRODUCT_BOOT_JARS += \
-    WfdCommon
+#PRODUCT_BOOT_JARS += \
+#    WfdCommon
