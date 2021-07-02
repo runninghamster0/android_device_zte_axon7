@@ -6,7 +6,6 @@
 #       /proc/device-tree/firmware/android/fstab/system
 #       /proc/device-tree/firmware/android/fstab/vendor
 
-<<<<<<< HEAD
 #<src>                                                       <mnt_point>       <type>  <mnt_flags and options>                                                                                         <fs_mgr_flags>
 /dev/block/bootdevice/by-name/system                         /system           ext4    ro,barrier=1                                                                                                    wait,recoveryonly
 /dev/block/bootdevice/by-name/vendor                         /vendor           ext4    ro,barrier=1                                                                                                    wait,recoveryonly
